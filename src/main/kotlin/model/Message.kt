@@ -1,3 +1,4 @@
 package model
 
-data class Message(val content: String)
+@JvmInline
+value class Message(val content: String)

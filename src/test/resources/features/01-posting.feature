@@ -1,4 +1,4 @@
-@wip
+#@wip
 Feature: Posting messages
   As Alice
   I want to publish messages to my personal timeline

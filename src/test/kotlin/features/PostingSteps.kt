@@ -1,6 +1,7 @@
 package features
 
 import io.cucumber.java8.En
+import model.User
 
 class PostingSteps : En {
     private lateinit var alice: User

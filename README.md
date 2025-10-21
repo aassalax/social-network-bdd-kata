@@ -19,3 +19,8 @@ Is tired of all those boring tasks like bowling game scores, bank accounts, sing
 
 Your team also decided for this project to not only apply **TDD** and **pair-programming** - this time you're gonna use **BDD** to cover all important features.
 
+---
+
+## 📋 Your Backlog
+
+1. **Posting**: Alice can publish messages to a personal timeline

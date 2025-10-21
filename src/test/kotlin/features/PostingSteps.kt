@@ -13,7 +13,7 @@ class PostingSteps : En {
             alice = User("Alice")
         }
         When("Alice publishes {string}") { message : String ->
-            alice.publish(message)
+            alice.publish(Message(message))
         }
         Then("Alice's timeline should contain {string}") { expectedMessage : String ->
             assertThat(alice.timeline).containsExactly(Message(expectedMessage))

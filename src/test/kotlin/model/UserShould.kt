@@ -10,7 +10,7 @@ class UserShould {
         val alice = User("Alice")
         val message = "Hello, this is my first post!"
 
-        alice.publish(message)
+        alice.publish(Message(message))
 
         assertThat(alice.timeline)
             .extracting<String> { it.content }

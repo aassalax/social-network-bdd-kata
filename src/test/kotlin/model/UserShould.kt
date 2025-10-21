@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test
 class UserShould {
 
     @Test
-    fun `publish a message`() {
+    fun `add message to timeline when publishing`() {
         val alice = User("Alice")
         val message = "Hello, this is my first post!"
 
@@ -15,5 +15,11 @@ class UserShould {
         assertThat(alice.timeline)
             .extracting<String> { it.content }
             .contains(message)
+    }
+
+    @Test
+    fun `have an empty timeline when created`() {
+        val user = User("Alice")
+        assertThat(user.timeline).isEmpty()
     }
 }

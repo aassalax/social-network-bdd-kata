@@ -1,9 +1,9 @@
 package model
 
 data class User(val name: String){
-    val timeline = mutableListOf<String>()
+    val timeline = mutableListOf<Message>()
 
     fun publish(message: String) {
-        timeline.add(message)
+        timeline.add(Message(message))
     }
 }

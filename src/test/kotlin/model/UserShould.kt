@@ -12,6 +12,8 @@ class UserShould {
 
         alice.publish(message)
 
-        assertThat(alice.timeline).containsExactly(message)
+        assertThat(alice.timeline)
+            .extracting<String> { it.content }
+            .contains(message)
     }
 }

@@ -1,6 +1,7 @@
 package features
 
 import io.cucumber.java8.En
+import model.Message
 import model.User
 import org.assertj.core.api.Assertions.assertThat
 
@@ -14,8 +15,8 @@ class PostingSteps : En {
         When("Alice publishes {string}") { message : String ->
             alice.publish(message)
         }
-        Then("Alice's timeline should contain {string}") { message : String ->
-            assertThat(alice.timeline).containsExactly(message)
+        Then("Alice's timeline should contain {string}") { expectedMessage : String ->
+            assertThat(alice.timeline).containsExactly(Message(expectedMessage))
         }
     }
 }

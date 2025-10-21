@@ -1,4 +1,4 @@
-package pandemic.configuration
+package configuration
 
 import io.cucumber.junit.platform.engine.Constants
 import org.junit.platform.suite.api.ConfigurationParameter

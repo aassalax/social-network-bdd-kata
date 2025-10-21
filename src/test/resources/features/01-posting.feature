@@ -8,3 +8,9 @@ Feature: Posting messages
     Given Alice is a user of the social network
     When Alice publishes "Hello, this is my first post!"
     Then Alice's timeline should contain "Hello, this is my first post!"
+
+  Scenario: Alice publishes multiple messages to her timeline
+    Given Alice is a user of the social network
+    And Alice publishes "First message"
+    When Alice publishes "Another message"
+    Then Alice's timeline should contain 2 messages
